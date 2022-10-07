@@ -6,6 +6,14 @@ import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';;
 
 function AddAerobicsExercise() {
+
+
+    const [newEx, setEx] = useState('');
+    const [newUrl, setnewUrl] = useState('');
+    const [newInstruction, setInstruction] = useState('');
+    const [newTime, setTime] = useState('');
+
+    
     return (
         <Box
           component="form"
