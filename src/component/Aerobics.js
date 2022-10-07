@@ -14,14 +14,17 @@ function Aerobics(){
     .then((data) => setEx(data))
    }, [])
 
-   
+   function handleDeletion(id){
+    setEx(ex.filter(exes => exes.id !== id))
+    fetch(`http://localhost:3000/exercises/${id}`, {method : "DELETE"})
+   }
 
 
     return(
         <div>
             <h1>The Aerobic Page</h1>
             <div>
-                {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises} />)}
+                {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises} handleDeletion={handleDeletion} />)}
             </div>
            
 
