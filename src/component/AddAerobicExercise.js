@@ -14,7 +14,7 @@ function AddAerobicsExercise() {
 
   function handlePost(e){
     e.preventDefault();
-    fetch("http://localhost:3000/exercises",{
+    fetch("https://firstondizii.herokuapp.com/exercises",{
         method : "POST",
         headers : {"Content-Type" : "application/json"},
         body:JSON.stringify({"title" : `${newEx}`, "pic_url" : `${newUrl}`,

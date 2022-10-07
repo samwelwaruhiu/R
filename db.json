@@ -17,14 +17,6 @@
       "remarks": "Dont Loose Hope"
     },
     {
-      "id": 6,
-      "title": "ARBS WORKOUT",
-      "pic_url": "https://media.tenor.com/26blyZDE4a0AAAAC/exercise-twist.gif",
-      "instructions": "Ensure you keep your body straight",
-      "time": "10min",
-      "remarks": "Dont Loose Hope"
-    },
-    {
       "id": 7,
       "title": "ABDOMINAL SUPRA WORKOUT",
       "pic_url": "https://media.tenor.com/z9a6Bypsmu0AAAAC/abdominal-supra-no-solo-treino-mestre.gif",
@@ -45,6 +37,13 @@
       "instructions": "Do 10 squats make sure you are upright",
       "time": "5min",
       "id": 9
+    },
+    {
+      "title": "Standby-Ab exercise",
+      "pic_url": "https://media1.popsugar-assets.com/files/thumbor/XJJEB1cIhAyU5K9tzgJidhvzxVM/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/04/13/738/n/1922729/87033ecd04363271_standingab.gif",
+      "instructions": "Make sure you lift your leg at your highest level",
+      "time": "2min",
+      "id": 10
     }
   ]
 }

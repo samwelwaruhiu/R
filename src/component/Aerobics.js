@@ -9,14 +9,14 @@ function Aerobics(){
 
    useEffect(()=>
    {
-    fetch("http://localhost:3000/exercises")
+    fetch("https://firstondizii.herokuapp.com/exercises")
     .then((resp) => resp.json())
     .then((data) => setEx(data))
    }, [])
 
    function handleDeletion(id){
     setEx(ex.filter(exes => exes.id !== id))
-    fetch(`http://localhost:3000/exercises/${id}`, {method : "DELETE"})
+    fetch(`https://firstondizii.herokuapp.com/exercises/${id}`, {method : "DELETE"})
    }
 
 
