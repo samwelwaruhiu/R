@@ -59,3 +59,11 @@
   
   }
   
+  .header2{
+    min-height:  90vh;
+    width:  100%;
+    background-image: url("https://images.pexels.com/photos/176782/pexels-photo-176782.jpeg?auto=compress&cs=tinysrgb&w=1600");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
