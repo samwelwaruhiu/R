@@ -16,41 +16,40 @@ function AddAerobicsExercise() {
     
     return (
         <Box
-          component="form"
-          sx={{
-            '& > :not(style)': { m: 12, width: '55ch' },
-          }}
-        >
+        component="form"
+        sx={{
+          '& > :not(style)': { m: 12, width: '55ch' },
+        }}
+      >
+        <TextField
+          id="outlined-name"
+          label="Name of Exercise"
+           onChange={(e) => setEx(e.target.value)}
+        />
+        <TextField
+          id="url"
+          label="Url of the Image"
+          onChange={(e) => setnewUrl(e.target.value)}
+        />
+         <TextField
+          id="description"
+          label="Instructions"
+          onChange={(e) => setInstruction(e.target.value)}
+        />
           <TextField
-            id="outlined-name"
-            label="Name of Exercise"
-             
-          />
-          <TextField
-            id="url"
-            label="Url of the Image"
-           
-          />
-           <TextField
-            id="description"
-            label="Instructions"
-           
-          />
-            <TextField
-            id="estimated_time"
-            label="Estimated time"
+          id="estimated_time"
+          label="Estimated time"
+          onChange={(e) => setTime(e.target.value)}
           
-            
-          />
-          
-          <Stack direction="row" spacing={2}>
-        <Button variant="contained" >
-            Send to Server
-          </Button>
-        </Stack>
-    
-        </Box>
-    
+        />
+        
+        <Stack direction="row" spacing={2}>
+      <Button variant="contained" onClick={handlePost}>
+          Send to Server
+        </Button>
+      </Stack>
+  
+      </Box>
         
     
         
