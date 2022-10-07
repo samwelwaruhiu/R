@@ -1,35 +1,52 @@
-import React, { useEffect, useState } from "react";
-import Aerobiccard from "./Aerobiccard";
+import React, {useState} from "react";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
 
+import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';;
 
-function Aerobics(){
-
-
-    const [ex , setEx] = useState([])
-
-   useEffect(()=>
-   {
-    fetch("http://localhost:3000/exercises")
-    .then((resp) => resp.json())
-    .then((data) => setEx(data))
-   }, [])
-
-   function handleDeletion(id){
-    setEx(ex.filter(exes => exes.id !== id))
-    fetch(`http://localhost:3000/exercises/${id}`, {method : "DELETE"})
-   }
-
-
-    return(
-        <div>
-            <h1>The Aerobic Page</h1>
-            <div>
-                {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises} handleDeletion={handleDeletion} />)}
-            </div>
+function AddAerobicsExercise() {
+    return (
+        <Box
+          component="form"
+          sx={{
+            '& > :not(style)': { m: 12, width: '55ch' },
+          }}
+        >
+          <TextField
+            id="outlined-name"
+            label="Name of Exercise"
+             
+          />
+          <TextField
+            id="url"
+            label="Url of the Image"
            
-
-        </div>
-    )
-}
-
-export default Aerobics;
+          />
+           <TextField
+            id="description"
+            label="Instructions"
+           
+          />
+            <TextField
+            id="estimated_time"
+            label="Estimated time"
+          
+            
+          />
+          
+          <Stack direction="row" spacing={2}>
+        <Button variant="contained" >
+            Send to Server
+          </Button>
+        </Stack>
+    
+        </Box>
+    
+        
+    
+        
+      );
+    }
+    
+    export default AddAerobicsExercise;
