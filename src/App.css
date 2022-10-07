@@ -1,0 +1,38 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+  }
+  
+  
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    
+  }
+  
+  
+  nav {
+    background-color: #CCCCCC;
+    overflow: hidden;
+    width: 1000px;
+    margin: auto;
+  }
+  
+  nav a {
+    float: left;
+        color: black;
+        text-align: center;
+        padding: 30px 50px;
+        text-decoration: none;
+        font-size: 20px;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    color: tomato;
+    border-bottom: 2px solid tomato;
+  }
+  
