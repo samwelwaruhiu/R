@@ -20,7 +20,14 @@ function AddAerobicsExercise() {
         body:JSON.stringify({"title" : `${newEx}`, "pic_url" : `${newUrl}`,
         "instructions": `${newInstruction}`,    "time" : `${newTime}`  
       })
-})}
+})
+
+setEx('');
+setnewUrl('')
+setInstruction('')
+setTime('')
+
+}
  
   return (
     <Box

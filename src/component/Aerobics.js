@@ -4,7 +4,6 @@ import Aerobiccard from "./Aerobiccard";
 
 function Aerobics(){
 
-
     const [ex , setEx] = useState([])
 
    useEffect(()=>
@@ -24,7 +23,7 @@ function Aerobics(){
         <div>
             <h1>The Aerobic Page</h1>
             <div>
-                {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises} handleDeletion={handleDeletion} />)}
+                {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises} handleDeletion={handleDeletion} setEx= {setEx} />)}
             </div>
            
 
