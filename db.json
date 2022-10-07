@@ -1,19 +1,50 @@
 {
-  "posts": [
+  "exercises": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "id": 4,
+      "title": "STAR JUMP",
+      "pic_url": "https://media.tenor.com/WR6yv2M2XxoAAAAC/star-jump-exercise.gif",
+      "instructions": "Ensure you keep your body straight",
+      "time": "10min",
+      "remarks": "Dont Loose Hope"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 5,
+      "title": "YOGA",
+      "pic_url": "https://media.tenor.com/z2hLxUXPgA8AAAAi/yoga-marine-leleu.gif",
+      "instructions": "Ensure you keep your body straight",
+      "time": "10min",
+      "remarks": "Dont Loose Hope"
+    },
+    {
+      "id": 6,
+      "title": "ARBS WORKOUT",
+      "pic_url": "https://media.tenor.com/26blyZDE4a0AAAAC/exercise-twist.gif",
+      "instructions": "Ensure you keep your body straight",
+      "time": "10min",
+      "remarks": "Dont Loose Hope"
+    },
+    {
+      "id": 7,
+      "title": "ABDOMINAL SUPRA WORKOUT",
+      "pic_url": "https://media.tenor.com/z9a6Bypsmu0AAAAC/abdominal-supra-no-solo-treino-mestre.gif",
+      "instructions": "Ensure you keep your body straight",
+      "time": "10min",
+      "remarks": "Dont Loose Hope"
+    },
+    {
+      "title": "Lunges",
+      "pic_url": "https://media.tenor.com/fWiC9Ze5eUMAAAAC/lunges-exercise.gif",
+      "instructions": "Do 10 Lunges make sure you are upright",
+      "time": "10 min",
+      "id": 8
+    },
+    {
+      "title": "SQUATS",
+      "pic_url": "https://media.tenor.com/1NY6qOs30XIAAAAC/goblet-squad.gif",
+      "instructions": "Do 10 squats make sure you are upright",
+      "time": "5min",
+      "id": 9
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
