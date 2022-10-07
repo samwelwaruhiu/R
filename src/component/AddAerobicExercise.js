@@ -13,6 +13,17 @@ function AddAerobicsExercise() {
     const [newInstruction, setInstruction] = useState('');
     const [newTime, setTime] = useState('');
 
+    function handlePost(e){
+        e.preventDefault();
+        fetch("http://localhost:3000/exercises",{
+            method : "POST",
+            headers : {"Content-Type" : "application/json"},
+            body:JSON.stringify({"title" : `${newEx}`, "pic_url" : `${newUrl}`,
+            "instructions": `${newInstruction}`,    "time" : `${newTime}`  
+          })
+    })}
+     
+
     
     return (
         <Box
