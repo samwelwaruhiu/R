@@ -14,6 +14,7 @@ function AddAerobicsExercise() {
 
   function handlePost(e){
     e.preventDefault();
+    alert("The Post will reflect on your Aerobics page")
     fetch("https://firstondizii.herokuapp.com/exercises",{
         method : "POST",
         headers : {"Content-Type" : "application/json"},
