@@ -23,9 +23,9 @@ function AddAerobicsExercise() {
 })
 
 setEx('');
-setnewUrl('')
-setInstruction('')
-setTime('')
+setnewUrl('');
+setInstruction('');
+setTime('');
 
 }
  
@@ -40,21 +40,25 @@ setTime('')
         id="outlined-name"
         label="Name of Exercise"
          onChange={(e) => setEx(e.target.value)}
+         value = {newEx}
       />
       <TextField
         id="url"
         label="Url of the Image"
         onChange={(e) => setnewUrl(e.target.value)}
+        value = {newUrl}
       />
        <TextField
         id="description"
         label="Instructions"
         onChange={(e) => setInstruction(e.target.value)}
+        value = {newInstruction}
       />
         <TextField
         id="estimated_time"
         label="Estimated time"
         onChange={(e) => setTime(e.target.value)}
+        value = {newTime}
         
       />
       
