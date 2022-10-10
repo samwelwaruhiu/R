@@ -6,24 +6,29 @@ import Search from "./Search";
 function Aerobics(){
  
    const [ex , setEx] = useState([])
+   const [search,setSearch] = useState([])
 
-   useEffect(()=>
-   {
+   function forGet(){
     fetch("https://firstondizii.herokuapp.com/exercises")
     .then((resp) => resp.json())
     .then((data) => setEx(data))
-    alert("May take some time to Load..Please Wait")
-   }, [])
+    }
+   
 
    function handleDeletion(id){
     setEx(ex.filter(exes => exes.id !== id))
     fetch(`https://firstondizii.herokuapp.com/exercises/${id}`, {method : "DELETE"})
    }
 
-   function handleSearch(search){
-    setEx(ex => ex.filter(exx => exx.title.toLowerCase().includes(search.toLowerCase())))
+   useEffect(() => {
+    (search.length > 0)?( setEx(ex => ex.filter((exp) => exp.title.toLowerCase().includes(search.toLowerCase())))):(forGet())}, [search]
+   )
+
+   function handleChange (e){
+    setSearch(e.target.value)
    }
 
+ 
   return(
         <div>
 
@@ -31,7 +36,7 @@ function Aerobics(){
             <h1>The Aerobic Page</h1>
            
             
-            <div><Search onSearch={handleSearch}/></div>
+            <div><Search handleChange={handleChange}/></div>
             
             <div>
                 {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises}  handleDeletion={handleDeletion} setEx= {setEx} />)}
