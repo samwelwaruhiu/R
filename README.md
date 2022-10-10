@@ -17,7 +17,7 @@ The Title of the project is a WorkOut Website.
 
 ## Project Description
  
-This is a WorkOut Website project. It is a website where a user can view his or her workout gallery, Add his or her preferred workouts, and delete the workout that he or she desires. It is a well-organized software that includes six well-organized components as well as four client-side routers.
+This is a WorkOut Website project. It is a website where a user can view his or her workout gallery, Search, Add his or her preferred workouts, and delete the workout that he or she desires. It is a well-organized software that includes six well-organized components as well as four client-side routers.
 
 ## Installation
 
