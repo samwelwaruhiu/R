@@ -41,6 +41,7 @@ function Aerobics(){
             <div>
                 {ex.map(exercises => <Aerobiccard key = {exercises.id} id= {exercises.id} ex={exercises}  handleDeletion={handleDeletion} setEx= {setEx} />)}
             </div>
+           
            </div>
     )
 }

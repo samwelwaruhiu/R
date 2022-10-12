@@ -6,15 +6,10 @@ import AddAerobicsExercise from './component/AddAerobicExercise';
 import Aerobics from './component/Aerobics';
 import About from './component/About';
 import NavBar from './component/NavBar';
-
-
-
+import ExerciseCard from './component/ExerciseCard';
 
 
 function App() {
- 
-
-
 
   return (
     <div>
@@ -24,8 +19,7 @@ function App() {
     <Route path='/aerobics' element = {<Aerobics/>} />
     <Route path='/addaerobics' element = {<AddAerobicsExercise/>}/>
     <Route path='/about' element = {<About/>}/>
-    
-  
+    <Route path= '/aerobics/:title' element= {<ExerciseCard/>}/>
   </Routes>
   </div>
       
